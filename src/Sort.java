@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Sort {
     public static void main(String[] args){
@@ -9,7 +11,7 @@ public class Sort {
         }
         System.out.println();
 
-        Arrays.sort(str);//정렬 후 출력
+        Arrays.sort(str, Collections.reverseOrder());//정렬 후 출력
         for(String s: str){
             System.out.print(s+ " ");
         }
